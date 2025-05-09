@@ -1,96 +1,18 @@
-// import React, { useEffect } from 'react';
-// import { useDispatch, useSelector } from 'react-redux';
-// import { fetchWeather } from '../../store/weatherThunks';
-// import {fetchWeatherFailure} from '../../store/weather/weatherSlice';
-// import { RootState } from '../../store/store';
-// import './style.css'
-
-// export const WeatherWidget: React.FC = () => {
-
-//  const dispatch = useDispatch();
-//   const weather = useSelector((state: RootState) => state.weather);
-
-//   useEffect(() => {
-//     if (navigator.geolocation) {
-//       navigator.geolocation.getCurrentPosition(
-//         (position) => {
-//           const { latitude, longitude } = position.coords;
-//           dispatch(fetchWeather(latitude, longitude));
-//         },
-//         (error) => {
-//           console.error(error);
-//           dispatch(fetchWeatherFailure('Failed to get geolocation'));
-//         }
-//       );
-//     } else {
-//       dispatch(fetchWeatherFailure('Geolocation not supported'));
-//     }
-//   }, [dispatch]);
-
-//     return (
-
-//         <div>
-//             <div className="widget">
-    
-//       {weather.temperature && weather.description && weather.name && weather.icon && weather.wind && weather.humidity && weather.feels_like &&(
-//         <div className='widget-data'>
-//             <h1>{weather.name}</h1>
-//               <img 
-//     src={`https://openweathermap.org/img/wn/${weather.icon}@2x.png`} 
-//     alt={weather.description || "Weather icon"}
-//     style={{ width: "100px", height: "100px", filter: "brightness(0) saturate(100%) invert(50%) sepia(100%) hue-rotate(180deg)"}}
-//   />
-//   <h3>{weather.temperature}°C</h3>
-//   <p>{weather.description}</p>
-//   <div className='weather-row'>
-//     <span>
-// <p>Wind</p>
-// <p>{weather.wind}</p>
-//     </span>
-//        <span>
-// <p>Humidity</p>
-// <p>{weather.humidity}</p>
-//     </span>
-//        <span>
-// <p>Feels like</p>
-// <p>{weather.feels_like}</p>
-//     </span>
-//     </div>
-//         </div>
-//       )}
-
-//                 </div>
-//         </div>
-
-  
-
-
-
-
-//     )
-// }
-
-
-
-
-
-
-
-
 
 
 // 2nd
 
 import React, { useEffect, useState } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useSelector } from 'react-redux';
 import { fetchWeather } from '../../store/weatherThunks';
 import { fetchWeatherByCity } from '../../store/weatherThunks'; // ✅ import
 import { fetchWeatherFailure } from '../../store/weather/weatherSlice';
 import { RootState } from '../../store/store';
+import { useAppDispatch } from '../../store/hook';
 import './style.css';
 
 export const WeatherWidget: React.FC = () => {
-  const dispatch = useDispatch();
+  const dispatch = useAppDispatch();
   const weather = useSelector((state: RootState) => state.weather);
 
   const [manualMode, setManualMode] = useState(false);

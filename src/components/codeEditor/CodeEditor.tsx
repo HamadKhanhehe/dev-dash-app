@@ -1,5 +1,5 @@
 // components/CodeEditor.tsx
-import React, { useState, useEffect } from 'react';
+import  { useState, useEffect } from 'react';
 import Editor from 'react-simple-code-editor';
 import Prism from 'prismjs';
 import 'prismjs/themes/prism-tomorrow.css';

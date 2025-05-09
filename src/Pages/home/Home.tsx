@@ -1,6 +1,5 @@
 import GithubStats from "../../components/githubstats/GithubStats"
-import CodeEditor, { NoteWidget } from "../../components/codeEditor/CodeEditor"
-import { PomodoroTimer } from "../../components/pomodorotimer/PomodoroTimer"
+import CodeEditor from "../../components/codeEditor/CodeEditor"
 import { TaskManager } from "../../components/taskmanager/TaskManager"
 import { WeatherWidget } from "../../components/weatherWidget/WeatherWidget"
 import './style.css'

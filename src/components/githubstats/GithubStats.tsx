@@ -1,87 +1,3 @@
-// // components/GitHubStats.tsx
-// import {  useState } from 'react';
-// // import './Widget.css'; // Shared widget styles
-// import axios from 'axios';
-
-// interface GitHubUserProps {
-//     username: string,
-//     avatar_url: string,
-//     followers: string,
-//     public_repos: number,
-// }
-
-
-// const GithubStats: React.FC = () => {
-//   const [username, setUsername] = useState<string>('');
-//   const [userData, setUserData] = useState<GitHubUserProps | null>(null);
-//     const [contributions, setContributions] = useState<any[]>([]);
-
-
-
-//   const fetchGithubStats = async (username: string) => {
-//     try{
-// const response = await axios.get(`https://api.github.com/users/${username}`)
-//     setUserData({
-//         username: response.data.login,
-//         followers: response.data.followers,
-//         avatar_url: response.data.avatar_url,
-//         public_repos:response.data.public_repos
-//     })
-//     console.log(response)
-//         // Fetch contributions (or events)
-//       const userContributions = await fetchUserContributions(username);
-//       setContributions(userContributions);
-// } catch (err) {
-// console.error(`failed to fetch user data check username${err}`)
-// }
-//   }
-
-//   const fetchUserContributions = async (username: string) => {
-//     const response = await axios.get(`https://api.github.com/users/${username}/events/public`);
-//     return console.log(response.data);
-//   };
-
-
-//   const handleSubmit = (e: React.FormEvent) => {
-//     e.preventDefault();
-// if (username) {
-//     fetchGithubStats(username)
-// }
-// }
-
-
-
-//   return (
-//     <div className="widget">
-//       <form onSubmit={handleSubmit}>
-//         <input type='text' value={username} onChange={(e)=> setUsername(e.target.value)} placeholder='enter your username' />
-//         <button>Search</button>
-//       </form>
-//       {userData && (
-// <div>
-//     <img src={userData.avatar_url} /> 
-//     <h3>{userData.username}</h3>
-//     <p>{userData.followers}</p>
-//     <p>{userData.public_repos}</p>
-//     </div>
-//       )}
-
-//       {/* Render contributions (simplified for now) */}
-//           <div>
-//             <h4>Recent Contributions</h4>
-//             <ul>
-//               {contributions.slice(0, 5).map((contribution: any) => (
-//                 <li key={contribution.id}>{contribution.type}</li>
-//               ))}
-//             </ul>
-//           </div>
-//     </div>
-//   );
-// };
-
-
-// export default GithubStats;
-
 
 
 
@@ -90,8 +6,7 @@
 import { useState } from 'react';
 import axios from 'axios';
 import './style.css'
-import { Widget } from '../widget/Widget';
-import { WeatherWidget } from '../weatherWidget/WeatherWidget';
+
 
 interface GitHubUserProps {
     username: string;
@@ -105,7 +20,6 @@ const GithubStats: React.FC = () => {
   const [userData, setUserData] = useState<GitHubUserProps | null>(null);
   const [contributions, setContributions] = useState<any[]>([]);
   const [showError, setShowError] = useState<boolean>(false);
-  const [loading, setLoading] = useState<boolean>(false);
 
   const fetchGithubStats = async (username: string) => {
     try {
