@@ -26,6 +26,13 @@ const CodeEditor = () => {
     localStorage.setItem('devdash-snippets', JSON.stringify(updatedSnippets));
   };
 
+  //clear snippet
+  const clearSnippets = () => {
+  setSnippets([]);
+  localStorage.removeItem('devdash-snippets');
+};
+
+
   // Highlight
   const highlight = (code: string) => {
     return Prism.highlight(code, Prism.languages[language], language);
@@ -48,6 +55,10 @@ const CodeEditor = () => {
     <button onClick={saveSnippet} className="save-button">
       💾 Save Snippet
     </button>
+    
+  <button onClick={clearSnippets} className="save-button">
+    🗑️ Clear All
+  </button>
   </div>
 
   <Editor
