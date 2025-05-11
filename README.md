@@ -1,4 +1,4 @@
-![Animated DevDash Title](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&color=FF00FF&center=true&vCenter=true&width=800&height=100&lines=%F0%9F%8E%89+#+DevDash+%F0%9F%8E%89)
+![Animated DevDash Title](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&color=FF00FF&center=true&vCenter=true&width=800&height=100&lines=%F0%9F%8E%89+#DevDash+%F0%9F%8E%89)
 *A Multi-Widget Developer Dashboard*  
 
 ![Demo GIF](https://media.tenor.com/_c57eQ30AVoAAAAM/anime.gif) 
