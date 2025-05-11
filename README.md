@@ -1,4 +1,4 @@
-DevDash
+<h1 style="color:purple;">DevDash</h1> <br>
 A Developer Dashboard built with React, TypeScript, and Redux Toolkit
 
 🚀 DevDash is a responsive, multi-functional dashboard designed to streamline a developer's workflow. It integrates essential productivity tools and real-time data widgets into a single, intuitive interface. Built with modern web technologies, this project showcases clean state management with Redux Toolkit and type-safe development with TypeScript.
