@@ -1,54 +1,70 @@
-# React + TypeScript + Vite
+DevDash
+A Developer Dashboard built with React, TypeScript, and Redux Toolkit
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 DevDash is a responsive, multi-functional dashboard designed to streamline a developer's workflow. It integrates essential productivity tools and real-time data widgets into a single, intuitive interface. Built with modern web technologies, this project showcases clean state management with Redux Toolkit and type-safe development with TypeScript.
 
-Currently, two official plugins are available:
+✨ Features
+1. GitHub Stats Tracker
+Enter your GitHub username to fetch and display key statistics (repositories, stars, contributions, etc.).
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Visualizes data with clean, responsive charts.
 
-## Expanding the ESLint configuration
+2. Real-Time Weather Widget
+Requests location access to show current weather conditions for your region.
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Displays temperature, humidity, wind speed, and weather icons.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+3. Task Manager (Pomodoro Timer)
+Customizable work/break intervals for productivity.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Audible alert when time expires (optional sound toggle).
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Tracks completed Pomodoro sessions.
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+4. Code Snippet Manager
+Write, edit, and save JavaScript code snippets.
+
+Syntax highlighting for readability.
+
+Local storage support to retain snippets.
+
+🛠️ Technologies Used
+Frontend: React 18, TypeScript
+
+State Management: Redux Toolkit
+
+Styling: CSS3 (Flexbox), Responsive Design
+
+APIs: GitHub API, OpenWeatherMap API
+
+Tools: Vite, ESLint, Prettier
+
+🚀 Getting Started
+Clone the repository:
+
+bash
+git clone https://github.com/HamadKhanhehe/dev-dash-app.git
+Install dependencies:
+
+bash
+npm install  
+Run the app:
+
+bash
+npm run dev  
+🔧 Configuration
+GitHub API: No token required for public data.
+
+Weather API: Sign up for a free OpenWeatherMap API key and add it to .env.
+
+📜 License
+MIT © Hammad Khan
+
+🎯 Why This Project?
+Demonstrates clean Redux state management with async thunks.
+
+Implements TypeScript interfaces for API responses.
+
+Responsive design tested on mobile, tablet, and desktop.
+
+👉 Explore the code and contribute! Feedback and PRs are welcome.
