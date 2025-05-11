@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&color=00FF00&center=true&vCenter=true&width=800&height=100&lines=%F0%9F%92%A1+DevDash+%F0%9F%92%A1" alt="DevDash" />
+  <img src="https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=30&duration=3000&color=A020F0&center=true&vCenter=true&width=800&height=100&lines=%F0%9F%92%A1+DevDash+%F0%9F%92%A1" alt="DevDash" />
 </h1>
 
 *A Multi-Widget Developer Dashboard*  
