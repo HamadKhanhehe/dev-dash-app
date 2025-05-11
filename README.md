@@ -18,10 +18,9 @@
 - APIs: GitHub, OpenWeatherMap  
 
 ### 🚀 Quick Start  
-bash
-git clone https://github.com/HamadKhanhehe/dev-dash-app.git
-npm install
-npm run dev
+- git clone https://github.com/HamadKhanhehe/dev-dash-app.git
+- npm install
+- npm run dev
 
 🎯 Why This Project?
 Demonstrates clean Redux state management with async thunks.
