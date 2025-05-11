@@ -1,64 +1,27 @@
-<h1 style="color:purple;">DevDash</h1> <br>
-A Developer Dashboard built with React, TypeScript, and Redux Toolkit
+# DevDash  
+*A Multi-Widget Developer Dashboard*  
 
-🚀 DevDash is a responsive, multi-functional dashboard designed to streamline a developer's workflow. It integrates essential productivity tools and real-time data widgets into a single, intuitive interface. Built with modern web technologies, this project showcases clean state management with Redux Toolkit and type-safe development with TypeScript.
+![Demo GIF](https://media.giphy.com/media/your-demo-link-here/giphy.gif) 
 
-✨ Features
-1. GitHub Stats Tracker
-Enter your GitHub username to fetch and display key statistics (repositories, stars, contributions, etc.).
+🚀 **DevDash** is a responsive React dashboard built with **TypeScript** and **Redux Toolkit**, designed to boost productivity with integrated tools:  
 
-Visualizes data with clean, responsive charts.
+### ✨ Features  
+- **GitHub Stats Tracker**: Fetch your profile stats by username.  
+- **Live Weather Widget**: Auto-detects location or manual input.  
+- **Pomodoro Timer**: Custom intervals with sound alerts.  
+- **Code Snippet Manager**: Save/load JavaScript snippets with syntax highlighting.  
 
-2. Real-Time Weather Widget
-Requests location access to show current weather conditions for your region.
+### 🛠 Tech Stack  
+- React 18 + TypeScript  
+- Redux Toolkit (state management)  
+- CSS3 Grid/Flexbox (responsive)  
+- APIs: GitHub, OpenWeatherMap  
 
-Displays temperature, humidity, wind speed, and weather icons.
-
-3. Task Manager (Pomodoro Timer)
-Customizable work/break intervals for productivity.
-
-Audible alert when time expires (optional sound toggle).
-
-Tracks completed Pomodoro sessions.
-
-4. Code Snippet Manager
-Write, edit, and save JavaScript code snippets.
-
-Syntax highlighting for readability.
-
-Local storage support to retain snippets.
-
-🛠️ Technologies Used
-Frontend: React 18, TypeScript
-
-State Management: Redux Toolkit
-
-Styling: CSS3 (Flexbox), Responsive Design
-
-APIs: GitHub API, OpenWeatherMap API
-
-Tools: Vite, ESLint, Prettier
-
-🚀 Getting Started
-Clone the repository:
-
+### 🚀 Quick Start  
 bash
 git clone https://github.com/HamadKhanhehe/dev-dash-app.git
-Install dependencies:
-
-bash
-npm install  
-Run the app:
-
-bash
-npm run dev  
-🔧 Configuration
-GitHub API: No token required for public data.
-
-Weather API: Sign up for a free OpenWeatherMap API key and add it to .env.
-
-📜 License
-MIT © Hammad Khan
+npm install
+npm run dev
 
 🎯 Why This Project?
 Demonstrates clean Redux state management with async thunks.
